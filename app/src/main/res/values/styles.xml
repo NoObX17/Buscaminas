@@ -5,4 +5,8 @@
         <item name="labelVisibilityMode">selected</item>
         <item name="android:fontFamily">@font/call_ops</item>
     </style>
+
+    <style name="ButtonStyle" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:layout_marginTop">16dp</item>
+    </style>
 </resources>

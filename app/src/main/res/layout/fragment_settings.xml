@@ -3,6 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:gravity="center"
     android:background="@drawable/background">
 
     <LinearLayout
@@ -14,25 +15,51 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Game Modes!"/>
+            android:text="Game Modes!"
+            android:textSize="42sp"
+            android:textColor="@color/white"/>
     </LinearLayout>
 
+    <!-- res/layout/activity_main.xml -->
     <LinearLayout
-        android:id="@+id/easy"
+        xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:orientation="vertical"
         android:gravity="center">
 
-        <!-- res/layout/activity_main.xml -->
-        <Button
-            android:id="@+id/my_button"
-            android:layout_width="wrap_content"
+        <ToggleButton
+            android:id="@+id/button_easy"
+            android:layout_width="175dp"
             android:layout_height="wrap_content"
-            android:background="@drawable/boton"
-            android:text="Easy Mode"
-            android:textColor="@color/selector_text_button" />
+            android:textOff="Easy Mode"
+            android:textOn="Easy Mode"
+            android:checked="true"
+            android:background="@drawable/selector_button"
+            android:textColor="@color/selector_text_button"
+            style="@style/ButtonStyle"/>
 
+        <ToggleButton
+            android:id="@+id/button_hard"
+            android:layout_width="175dp"
+            android:layout_height="wrap_content"
+            android:textOff="Hard Mode"
+            android:textOn="Hard Mode"
+            android:background="@drawable/selector_button"
+            android:textColor="@color/selector_text_button"
+            style="@style/ButtonStyle"/>
 
+        <ToggleButton
+            android:id="@+id/button_extreme"
+            android:layout_width="175dp"
+            android:layout_height="wrap_content"
+            android:textOff="Extreme Mode"
+            android:textOn="Extreme Mode"
+            android:background="@drawable/selector_button"
+            android:textColor="@color/selector_text_button"
+            style="@style/ButtonStyle"/>
     </LinearLayout>
+
 
 </LinearLayout>

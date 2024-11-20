@@ -1,12 +1,17 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
-    <!-- Base application theme. -->
+    <!-- Base application theme -->
     <style name="Base.Theme.Buscaminas" parent="Theme.Material3.DayNight.NoActionBar">
-        <!-- Customize your light theme here. -->
-        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <!-- Customize your light theme here -->
     </style>
 
     <style name="Theme.Buscaminas" parent="Base.Theme.Buscaminas">
         <item name="android:fontFamily">@font/call_ops</item>
         <item name="fontFamily">@font/call_ops</item>
+    </style>
+
+    <!-- Custom styles for button -->
+    <style name="Widget.AppCompat.Button.Colored" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:background">@drawable/selector_button</item>
+        <item name="android:textColor">@color/selector_text_button</item>
     </style>
 </resources>
