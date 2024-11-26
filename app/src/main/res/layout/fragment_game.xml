@@ -1,7 +1,542 @@
 <?xml version="1.0" encoding="utf-8"?>
-<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/black">
+    android:orientation="vertical"
+    android:background="@drawable/game_background">
+    <TextView
+        android:id="@+id/mode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:gravity="center"
+        android:text="EASY MODE"
+        android:textColor="@color/white"
+        android:textSize="42sp"/>
 
-</GridLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp">
+
+        <Chronometer
+            android:id="@+id/contador"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:text="0"
+            android:textSize="24sp"
+            android:textColor="@color/white" />
+
+        <ToggleButton
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="30dp"
+            android:background="@drawable/flag"
+            android:backgroundTint="@color/orange"
+            android:textOn=" "
+            android:textOff=" "/>
+
+    </LinearLayout>
+
+
+
+    <GridLayout
+        android:id="@+id/easy_mode"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="100dp"
+        android:layout_marginHorizontal="40dp"
+        android:alignmentMode="alignMargins"
+        android:columnCount="4"
+        android:rowCount="4"
+        android:layout_gravity="center"
+        android:background="@drawable/tablero_easy"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/cell1"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:gravity="center"
+            android:textColor="@android:color/white"/>
+
+        <TextView
+            android:id="@+id/cell2"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:gravity="center"
+            android:textColor="@android:color/white"/>
+
+        <TextView
+            android:id="@+id/cell3"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:gravity="center"
+            android:textColor="@android:color/white"/>
+
+        <TextView
+            android:id="@+id/cell4"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:gravity="center"
+            android:textColor="@android:color/white"/>
+
+        <TextView
+            android:id="@+id/cell5"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:gravity="center"
+            android:textColor="@android:color/white"/>
+
+        <TextView
+            android:id="@+id/cell6"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:gravity="center"
+            android:textColor="@android:color/white"/>
+
+        <TextView
+            android:id="@+id/cell7"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:gravity="center"
+            android:textColor="@android:color/white"/>
+
+        <TextView
+            android:id="@+id/cell8"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:gravity="center"
+            android:textColor="@android:color/white"/>
+
+        <TextView
+            android:id="@+id/cell9"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:gravity="center"
+            android:textColor="@android:color/white"/>
+
+        <TextView
+            android:id="@+id/cell10"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:gravity="center"
+            android:textColor="@android:color/white"/>
+
+        <TextView
+            android:id="@+id/cell11"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:gravity="center"
+            android:textColor="@android:color/white"/>
+
+        <TextView
+            android:id="@+id/cell12"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:gravity="center"
+            android:textColor="@android:color/white"/>
+
+        <TextView
+            android:id="@+id/cell13"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:gravity="center"
+            android:textColor="@android:color/white"/>
+
+        <TextView
+            android:id="@+id/cell14"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:gravity="center"
+            android:textColor="@android:color/white"/>
+
+        <TextView
+            android:id="@+id/cell15"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:gravity="center"
+            android:textColor="@android:color/white"/>
+
+        <TextView
+            android:id="@+id/cell16"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:gravity="center"
+            android:textColor="@android:color/white"/>
+    </GridLayout>
+
+    <GridLayout
+        android:id="@+id/hard_mode"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="100dp"
+        android:layout_marginHorizontal="40dp"
+        android:alignmentMode="alignMargins"
+        android:columnCount="6"
+        android:rowCount="6"
+        android:layout_gravity="center"
+        android:background="@drawable/tablero_hard"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/hardcell1"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:gravity="center"
+            android:textColor="@android:color/white"/>
+
+        <TextView
+            android:id="@+id/hardcell2"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:gravity="center"
+            android:textColor="@android:color/white"/>
+
+        <TextView
+            android:id="@+id/hardcell3"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:gravity="center"
+            android:textColor="@android:color/white"/>
+
+        <TextView
+            android:id="@+id/hardcell4"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:gravity="center"
+            android:textColor="@android:color/white"/>
+
+        <TextView
+            android:id="@+id/hardcell5"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:gravity="center"
+            android:textColor="@android:color/white"/>
+
+        <TextView
+            android:id="@+id/hardcell6"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:gravity="center"
+            android:textColor="@android:color/white"/>
+
+        <TextView
+            android:id="@+id/hardcell7"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:gravity="center"
+            android:textColor="@android:color/white"/>
+
+        <TextView
+            android:id="@+id/hardcell8"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:gravity="center"
+            android:textColor="@android:color/white"/>
+
+        <TextView
+            android:id="@+id/hardcell9"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:gravity="center"
+            android:textColor="@android:color/white"/>
+
+        <TextView
+            android:id="@+id/hardcell10"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:gravity="center"
+            android:textColor="@android:color/white"/>
+
+        <TextView
+            android:id="@+id/hardcell11"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:gravity="center"
+            android:textColor="@android:color/white"/>
+
+        <TextView
+            android:id="@+id/hardcell12"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:gravity="center"
+            android:textColor="@android:color/white"/>
+
+        <TextView
+            android:id="@+id/hardcell13"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:gravity="center"
+            android:textColor="@android:color/white"/>
+
+        <TextView
+            android:id="@+id/hardcell14"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:gravity="center"
+            android:textColor="@android:color/white"/>
+
+        <TextView
+            android:id="@+id/hardcell15"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:gravity="center"
+            android:textColor="@android:color/white"/>
+
+        <TextView
+            android:id="@+id/hardcell16"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:gravity="center"
+            android:textColor="@android:color/white"/>
+
+        <TextView
+            android:id="@+id/hardcell17"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:gravity="center"
+            android:textColor="@android:color/white"/>
+
+        <TextView
+            android:id="@+id/hardcell18"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:gravity="center"
+            android:textColor="@android:color/white"/>
+
+        <TextView
+            android:id="@+id/hardcell19"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:gravity="center"
+            android:textColor="@android:color/white"/>
+
+        <TextView
+            android:id="@+id/hardcell20"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:gravity="center"
+            android:textColor="@android:color/white"/>
+
+        <TextView
+            android:id="@+id/hardcell21"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:gravity="center"
+            android:textColor="@android:color/white"/>
+
+        <TextView
+            android:id="@+id/hardcell22"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:gravity="center"
+            android:textColor="@android:color/white"/>
+
+        <TextView
+            android:id="@+id/hardcell23"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:gravity="center"
+            android:textColor="@android:color/white"/>
+
+        <TextView
+            android:id="@+id/hardcell24"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:gravity="center"
+            android:textColor="@android:color/white"/>
+
+        <TextView
+            android:id="@+id/hardcell25"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:gravity="center"
+            android:textColor="@android:color/white"/>
+
+        <TextView
+            android:id="@+id/hardcell26"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:gravity="center"
+            android:textColor="@android:color/white"/>
+
+        <TextView
+            android:id="@+id/hardcell27"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:gravity="center"
+            android:textColor="@android:color/white"/>
+
+        <TextView
+            android:id="@+id/hardcell28"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:gravity="center"
+            android:textColor="@android:color/white"/>
+
+        <TextView
+            android:id="@+id/hardcell29"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:gravity="center"
+            android:textColor="@android:color/white"/>
+
+        <TextView
+            android:id="@+id/hardcell30"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:gravity="center"
+            android:textColor="@android:color/white"/>
+
+        <TextView
+            android:id="@+id/hardcell31"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:gravity="center"
+            android:textColor="@android:color/white"/>
+
+        <TextView
+            android:id="@+id/hardcell32"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:gravity="center"
+            android:textColor="@android:color/white"/>
+
+        <TextView
+            android:id="@+id/hardcell33"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:gravity="center"
+            android:textColor="@android:color/white"/>
+
+        <TextView
+            android:id="@+id/hardcell34"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:gravity="center"
+            android:textColor="@android:color/white"/>
+
+        <TextView
+            android:id="@+id/hardcell35"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:gravity="center"
+            android:textColor="@android:color/white"/>
+
+        <TextView
+            android:id="@+id/hardcell36"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:gravity="center"
+            android:textColor="@android:color/white"/>
+    </GridLayout>
+</LinearLayout>
